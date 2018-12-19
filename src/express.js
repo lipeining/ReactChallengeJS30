@@ -7,9 +7,19 @@ var rq = require('request-promise');
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.get('/apis', async function(req, res, next) {
+router.get('/api', async function(req, res, next) {
   let API = [];
   return res.json(API);
+});
+router.get('/api/:id', async function(req, res, next) {
+  let API = [];
+  let api = API.find((a)=>{
+    return a.id === Number(req.params:id);
+  });
+  if(!api) {
+    return res.json({notFound: true});
+  }
+  return res.json(api);
 });
 router.put('/api/:id', async function(req, res, next) {
   let API = [];
