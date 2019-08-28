@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 // import routes from './routes';
 import {
   BrowserRouter as Router,
@@ -9,11 +9,11 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
-import NotFound from './404';
-import Home from './home';
-import DrumKit from './DrumKit';
-import JSCssClock from './JSCssClock';
-import CssVariables from './CSSVariables';
+import NotFound from "./404";
+import Home from "./home";
+import DrumKit from "./DrumKit";
+import JSCssClock from "./JSCssClock";
+import CssVariables from "./CSSVariables";
 
 class App extends Component {
   render() {
@@ -22,17 +22,17 @@ class App extends Component {
         <div>
           <ul>
             <li>
-            <Link to="/">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="/durmkit">durm kit</Link>
+              <Link to="/durmkit">durm kit</Link>
             </li>
             <li>
-            <Link to="/js-css-clock">js css clock</Link>
-            </li>           
+              <Link to="/js-css-clock">js css clock</Link>
+            </li>
             <li>
-            <Link to="/css-variables">css variables</Link>
-            </li>       
+              <Link to="/css-variables">css variables</Link>
+            </li>
           </ul>
           <Switch>
             <Route path="/" exact component={Home} />
@@ -40,7 +40,7 @@ class App extends Component {
             <Route path="/js-css-clock" component={JSCssClock}></Route>
             <Route path="/css-variables" component={CssVariables}></Route>
             <Route component={NotFound} />
-          </Switch>          
+          </Switch>
         </div>
       </Router>
     );
