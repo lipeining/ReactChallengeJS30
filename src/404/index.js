@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import * as R from "ramda";
 
 class NotFound extends Component {
-  constructor() {
-    super();
-  }
   render() {
     const arr = R.map(R.identity, [1, 2, 3]);
     console.log(arr);

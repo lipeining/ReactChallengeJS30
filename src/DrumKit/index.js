@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import DrumKits from "./DrumKits";
-import keydown from "react-keydown";
-import RAudio from "./RAudio";
+// import keydown from "react-keydown";
+// import RAudio from "./RAudio";
 // import './style.css';
 import KeyComponent from "./key";
 

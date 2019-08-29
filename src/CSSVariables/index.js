@@ -78,7 +78,10 @@ class CssVariables extends React.Component {
             ></input>
           </label>
         </div>
-        <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500"></img>
+        <img
+          src="https://source.unsplash.com/7bwQXzbF6KE/800x500"
+          alt="test_img"
+        ></img>
       </div>
     );
   }
