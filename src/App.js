@@ -8,6 +8,7 @@ import Home from "./home";
 import DrumKit from "./DrumKit";
 import JSCssClock from "./JSCssClock";
 import CssVariables from "./CSSVariables";
+import TypeAhead from "./TypeAhead";
 import * as R from "ramda";
 
 class App extends Component {
@@ -25,6 +26,12 @@ class App extends Component {
         to: "/css-variables",
         name: "css variables",
         component: CssVariables,
+        exact: false
+      },
+      {
+        to: "/type-ahead",
+        name: "type ahead",
+        component: TypeAhead,
         exact: false
       }
     ];
