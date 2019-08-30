@@ -9,6 +9,7 @@ import DrumKit from "./DrumKit";
 import JSCssClock from "./JSCssClock";
 import CssVariables from "./CSSVariables";
 import TypeAhead from "./TypeAhead";
+import HTML5Canvas from "./HTML5Canvas";
 import * as R from "ramda";
 
 class App extends Component {
@@ -32,6 +33,12 @@ class App extends Component {
         to: "/type-ahead",
         name: "type ahead",
         component: TypeAhead,
+        exact: false
+      },
+      {
+        to: "/html5-canvas",
+        name: "html5 canvas",
+        component: HTML5Canvas,
         exact: false
       }
     ];
